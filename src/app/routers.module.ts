@@ -11,11 +11,27 @@ import {SdkComponent} from "./business/sdk/sdk/sdk.component";
 import {UserComponent} from "./business/user/user/user.component";
 import {MaterialModule} from "@angular/material";
 import {FormsModule} from "@angular/forms";
+import {DataModule} from "./business/data/module/data.module";
+import {LoginModule} from "./business/login/module/login.module";
+import {SdkModule} from "./business/sdk/module/sdk.module";
+import {UserModule} from "./business/user/module/user.module";
+import {MediamgComponent} from "./business/mediamg/mediamg/mediamg.component";
+import {AdvertmgComponent} from "./business/advertmg/advertmg/advertmg.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/admin', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-  {path: 'admin', component: HomeComponent},
+  {
+    path: 'admin',
+    component: HomeComponent,
+    children:[
+      {path:'data',component:DataComponent},
+      {path:'sdk',component:SdkComponent},
+      {path:'user',component:UserComponent},
+      {path:'media',component:MediamgComponent},
+      {path:'advert',component:AdvertmgComponent}
+    ],
+  },
 ]
 
 @NgModule({
@@ -23,7 +39,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     CommonModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     RouterModule.forRoot(routes),
   ],
   exports: [
@@ -36,6 +52,8 @@ const routes: Routes = [
     DataComponent,
     SdkComponent,
     UserComponent,
+    MediamgComponent,
+    AdvertmgComponent,
   ]
 })
 export class RoutersModule {
