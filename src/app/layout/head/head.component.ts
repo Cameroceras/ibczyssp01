@@ -8,7 +8,6 @@ const menus: HeadBean[] = [
   {title: "SDK下载", url: '/'},
   {title: "账户管理", url: '/'},
   {title: "其他", url: '/'},
-  {title: "登录", url: '/login'},
 ];
 
 

@@ -12,6 +12,12 @@
   color:gray;
 }
 
+.home-top-carda-span1{
+  float: right;
+  margin-top:10px;
+  margin-right:20px;
+}
+
 
 .home-top-cardb{
   background-color:red;

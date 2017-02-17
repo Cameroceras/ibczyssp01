@@ -2,7 +2,11 @@
   <div>
     <div class="home-top-carda">
       <span class="home-top-carda-span">快推SSP</span>
-      <span>欢迎：百传中云<button md-button>退出</button> </span>
+      <span class="home-top-carda-span1">
+        欢迎：百传中云
+        <a href="/"md-button>退出</a>
+        <a href="/login"md-raised-button>登录</a>
+      </span>
     </div>
     <div class="home-top-cardb">
       <a *ngFor="let title of items"  routerLink="{{title.url}}" >{{title.title}}</a>
