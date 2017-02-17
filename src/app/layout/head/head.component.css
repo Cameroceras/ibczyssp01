@@ -1,0 +1,35 @@
+
+.home-top-card{
+  padding:0;
+}
+
+.home-top-carda{
+  padding:10px;
+}
+
+.home-top-carda-span{
+  font-size:260%;
+  color:gray;
+}
+
+
+.home-top-cardb{
+  background-color:red;
+  height:auto;
+}
+
+.home-top-cardb a{
+  position: relative;
+  display: inline-block;
+  margin-left:10px;
+  padding:15px;
+  text-decoration:none;
+  color:#eee;
+}
+
+.home-top-cardb a:hover{
+  background-color: #161616;
+
+}
+
+

@@ -1,8 +1,12 @@
-<p>
-  login works!
-</p>
+<md-card class="login-box">
+  <md-card class="login-tittle">登录</md-card>
+  <div class="login-context">
+    <form id="login-form" (ngSubmit)="login()" #loginForm="ngForm">
+      <input type="text" placeholder="user name" required name="name"  [(ngModel)]="loginUser.name"/>
+      <input type="password" placeholder="user password" required name="password"  [(ngModel)]="loginUser.password"/>
+      <button type="submit" md-raised-button > 提交</button>
+    </form>
+  </div>
+</md-card>
 
-<div>
-  <button md-button>button</button>
-
-</div>
+{{loginUser.name}} {{loginUser.password}}
