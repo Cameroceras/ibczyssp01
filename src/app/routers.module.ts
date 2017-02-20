@@ -1,7 +1,6 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import 'hammerjs';
-
+import {NgModule} from "@angular/core";
+import {CommonModule} from "@angular/common";
+import "hammerjs";
 import {Routes, RouterModule} from "@angular/router";
 import {LoginComponent} from "./business/login/login/login.component";
 import {HomeComponent} from "./layout/home/home.component";
@@ -11,12 +10,10 @@ import {SdkComponent} from "./business/sdk/sdk/sdk.component";
 import {UserComponent} from "./business/user/user/user.component";
 import {MaterialModule} from "@angular/material";
 import {FormsModule} from "@angular/forms";
-import {DataModule} from "./business/data/module/data.module";
-import {LoginModule} from "./business/login/module/login.module";
-import {SdkModule} from "./business/sdk/module/sdk.module";
-import {UserModule} from "./business/user/module/user.module";
 import {MediamgComponent} from "./business/mediamg/mediamg/mediamg.component";
 import {AdvertmgComponent} from "./business/advertmg/advertmg/advertmg.component";
+import {DashboardComponent} from "./business/data/dashboard/dashboard/dashboard.component";
+import {SearchComponent} from "./business/data/search/search/search.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -54,6 +51,8 @@ const routes: Routes = [
     UserComponent,
     MediamgComponent,
     AdvertmgComponent,
+    DashboardComponent,
+    SearchComponent,
   ]
 })
 export class RoutersModule {

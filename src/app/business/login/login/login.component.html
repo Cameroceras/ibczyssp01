@@ -1,11 +1,23 @@
 <md-card class="login-box">
   <md-card class="login-tittle">登录</md-card>
   <div class="login-context">
+
     <form id="login-form" (ngSubmit)="login()" #loginForm="ngForm">
-      <input type="text" placeholder="user name" required name="name"  [(ngModel)]="loginUser.name"/>
-      <input type="password" placeholder="user password" required name="password"  [(ngModel)]="loginUser.password"/>
-      <button type="submit" md-raised-button  [disabled]="! loginForm.form.valid" > 提交</button>
+      <span mdTooltip="用户名必填">
+        <md-input-container>
+        <input type="text" mdInput placeholder="user name" required name="name" [(ngModel)]="loginUser.name"/>
+      </md-input-container>
+      </span>
+      <span mdTooltip="用户密码必填">
+
+      <md-input-container>
+        <input type="password" mdInput placeholder="user password" required name="password"
+               [(ngModel)]="loginUser.password"/>
+      </md-input-container>
+        </span>
+      <button type="submit" md-raised-button [disabled]="! loginForm.form.valid"> 提交</button>
     </form>
+
   </div>
 </md-card>
 

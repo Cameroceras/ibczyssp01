@@ -1,0 +1,33 @@
+.dash-div {
+  padding: 10px;
+}
+
+.dash-box {
+  display: inline-block;
+  width: 24%;
+}
+
+.dash-box div:first-child {
+  padding: 10px;
+  font-size: 130%;
+}
+
+.dash-box div:last-child span {
+  color: red;
+}
+
+.dash-box div:last-child {
+  padding: 0px 10px 10px 10px;
+}
+
+.box-board {
+  border-right: 1px solid #ccc;
+}
+
+.box-font-num{
+  font-size:130%;
+}
+
+
+
+

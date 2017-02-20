@@ -1,14 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-
-
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 
-body{
-  margin:0px;
-  padding:0px;
+body {
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
   background: #f7f7f7;
 }
 
-.ssp-bg-blue{
-  background-color:#0275d8;
+.ssp-bg-blue {
+  background-color: #0275d8;
 }

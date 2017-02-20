@@ -20,11 +20,14 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     LoggerUtils.i("login function ...........");
-    alert(JSON.stringify(this.loginUser));
+    // alert(JSON.stringify(this.loginUser));
 
     //do somathing to auth login
     // navigate to admin layoutE
-    this.router.navigate(["/admin"]);
+    if ("admin" === this.loginUser.name && "admin" === this.loginUser.password) {
+      this.router.navigate(["/admin"]);
+    } else {
+      alert("用户或者密码错误 ！");
+    }
   }
-
 }
