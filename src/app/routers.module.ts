@@ -19,7 +19,7 @@ import {MediamgComponent} from "./business/mediamg/mediamg/mediamg.component";
 import {AdvertmgComponent} from "./business/advertmg/advertmg/advertmg.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/admin', pathMatch: 'full'},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {
     path: 'admin',

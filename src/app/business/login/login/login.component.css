@@ -26,16 +26,21 @@
   height: 20px;
   margin-top: 10px;
   display: block;
-  padding: 8px;
+  padding: 6px;
   border: 1px solid #f7f7f7;
   box-shadow: 0px 0px 3px #ccc;
 }
 
+.login-context input:focus{
+  border:1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+
 .login-context button {
-  width: 100%;
+  width: 150px;
+  margin:20px auto;
   display: block;
-  margin-top: 20px;
-  padding:8px;
+  padding:4px;
   color:white;
   background-color: #0275d8;
 

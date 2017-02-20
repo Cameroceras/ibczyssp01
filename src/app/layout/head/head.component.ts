@@ -19,11 +19,16 @@ const menus: HeadBean[] = [
 export class HeadComponent implements OnInit {
 
   items: HeadBean[] = menus;
+  selected: HeadBean;
 
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  onSelected(selectItem: HeadBean): void {
+    this.selected=selectItem;
   }
 
 }

@@ -4,9 +4,8 @@
     <form id="login-form" (ngSubmit)="login()" #loginForm="ngForm">
       <input type="text" placeholder="user name" required name="name"  [(ngModel)]="loginUser.name"/>
       <input type="password" placeholder="user password" required name="password"  [(ngModel)]="loginUser.password"/>
-      <button type="submit" md-raised-button > 提交</button>
+      <button type="submit" md-raised-button  [disabled]="! loginForm.form.valid" > 提交</button>
     </form>
   </div>
 </md-card>
 
-{{loginUser.name}} {{loginUser.password}}

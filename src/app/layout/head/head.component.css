@@ -34,8 +34,12 @@
 }
 
 .home-top-cardb a:hover{
-  background-color: #161616;
+  background-color: #2b2b2b;
 
+}
+
+.itemselected{
+  background-color: #2b2b2b;
 }
 
 

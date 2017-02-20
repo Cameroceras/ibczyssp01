@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {UserBean} from "../../../beans/user-bean";
 import {LoggerUtils} from "../../../common/logger-utils";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginUser: UserBean = new UserBean();
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -19,7 +20,11 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     LoggerUtils.i("login function ...........");
+    alert(JSON.stringify(this.loginUser));
 
+    //do somathing to auth login
+    // navigate to admin layoutE
+    this.router.navigate(["/admin"]);
   }
 
 }

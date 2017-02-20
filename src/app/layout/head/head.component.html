@@ -9,7 +9,11 @@
       </span>
     </div>
     <div class="home-top-cardb">
-      <a *ngFor="let title of items"  routerLink="{{title.url}}" >{{title.title}}</a>
+      <a *ngFor="let title of items"
+         routerLink="{{title.url}}"
+         [class.itemselected]="title===selected"
+         (click)="onSelected(title)"
+      >{{title.title}}</a>
     </div>
   </div>
 </md-card>
