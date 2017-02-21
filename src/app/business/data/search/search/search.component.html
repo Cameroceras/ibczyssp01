@@ -1,3 +1,21 @@
-<p>
-  search works!
-</p>
+<md-card class="search-box">
+
+  <md-select placeholder="媒体" class="search-select">
+    <md-option *ngFor="let media of mmedias" [value]="media">
+      {{media}}
+    </md-option>
+  </md-select>
+  <md-select placeholder="广告位" class="search-select">
+    <md-option *ngFor="let mloca of mlocations" [value]="mloca">
+      {{mloca}}
+    </md-option>
+  </md-select>
+  <md-select placeholder="日期" class="search-select">
+    <md-option *ngFor="let date of mdates" [value]="date">
+      {{date}}
+    </md-option>
+  </md-select>
+  <button md-raised-button>查询</button>
+  <button md-raised-button id="exportdata">导出数据</button>
+
+</md-card>

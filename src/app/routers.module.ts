@@ -14,6 +14,7 @@ import {MediamgComponent} from "./business/mediamg/mediamg/mediamg.component";
 import {AdvertmgComponent} from "./business/advertmg/advertmg/advertmg.component";
 import {DashboardComponent} from "./business/data/dashboard/dashboard/dashboard.component";
 import {SearchComponent} from "./business/data/search/search/search.component";
+import {MtableComponent} from "./business/data/mtable/mtable/mtable.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -53,6 +54,7 @@ const routes: Routes = [
     AdvertmgComponent,
     DashboardComponent,
     SearchComponent,
+    MtableComponent,
   ]
 })
 export class RoutersModule {
