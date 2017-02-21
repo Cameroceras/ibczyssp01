@@ -1,3 +1,35 @@
-<p>
-  mediatable works!
-</p>
+<md-card class="media-search-mdcard">
+  <table class="table">
+    <thead>
+    <tr>
+      <td>媒体ID</td>
+      <td>媒体名称</td>
+      <td>分类</td>
+      <td>系统平台</td>
+      <td>状态</td>
+      <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let media of mmediaes">
+      <td>{{media.id}}</td>
+      <td>{{media.name}}</td>
+      <td>{{media.type}}</td>
+      <td>{{media.os}}</td>
+      <td>
+        <md-slide-toggle [checked]="media.status" [(ngModel)]="media.status" class="media-slide-toggle">
+          <span *ngIf="media.status">
+            open
+          </span>
+          <span *ngIf="media.status==false">
+            close
+          </span>
+        </md-slide-toggle>
+      </td>
+      <td>d</td>
+    </tr>
+    </tbody>
+  </table>
+</md-card>
+
+

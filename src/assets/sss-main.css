@@ -8,6 +8,10 @@
 
 .table thead {
   background: #ececec;
+  font-weight:bold;
+}
+.table thead td{
+  padding:10px;
 }
 
 .table td {

@@ -10,12 +10,21 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>sdf</td>
-      <td>sdf</td>
-      <td>sdf</td>
-      <td>sdf</td>
-      <td>sdf</td>
+    <tr *ngFor="let advert of mAdverts">
+      <td>{{advert.id}}</td>
+      <td>{{advert.name}}</td>
+      <td>{{advert.appName}}</td>
+      <td>
+        <md-slide-toggle [checked]="advert.status" [(ngModel)]="advert.status" class="advert-slide-toggle">
+           <span *ngIf="advert.status">
+            开启中
+          </span>
+          <span *ngIf="advert.status == false">
+            关闭中
+          </span>
+        </md-slide-toggle>
+      </td>
+      <td>操作</td>
     </tr>
     </tbody>
   </table>

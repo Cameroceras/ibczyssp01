@@ -2,9 +2,10 @@
  * Created by baichuan on 2017/2/21.
  */
 
-export class AdvertBean{
+export class MediaBean{
   id:number;
   name:string;
-  appName:string;
+  type:string;
+  os:string;
   status:boolean;
 }

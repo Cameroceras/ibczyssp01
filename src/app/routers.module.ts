@@ -21,6 +21,8 @@ import {MediaaddComponent} from "./business/mediamg/mediaadd/mediaadd/mediaadd.c
 import {AdvertsearchComponent} from "./business/advertmg/advertsearch/advertsearch/advertsearch.component";
 import {AdverttableComponent} from "./business/advertmg/advertable/adverttable/adverttable.component";
 import {AdvertaddComponent} from "./business/advertmg/advertadd/advertadd/advertadd.component";
+import {UseraccountComponent} from "./business/user/useraccount/useraccount/useraccount.component";
+import {UserbaseComponent} from "./business/user/userbase/userbase/userbase.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -55,7 +57,6 @@ const routes: Routes = [
     LoginComponent,
     DataComponent,
     SdkComponent,
-    UserComponent,
     MediamgComponent,
     DashboardComponent,
     SearchComponent,
@@ -69,6 +70,10 @@ const routes: Routes = [
     AdverttableComponent,
     AdvertsearchComponent,
     AdvertaddComponent,
+
+    UserComponent,
+    UserbaseComponent,
+    UseraccountComponent,
   ]
 })
 export class RoutersModule {
