@@ -5,6 +5,7 @@
 .dash-box {
   display: inline-block;
   width: 24%;
+  text-align: center;
 }
 
 .dash-box div:first-child {
@@ -20,12 +21,16 @@
   padding: 0px 10px 10px 10px;
 }
 
-.box-board {
-  border-right: 1px solid #ccc;
-}
 
 .box-font-num{
   font-size:130%;
+}
+
+.dashboard-bar{
+  width:1px;
+  display: inline-block;
+  background-color: #ccc;
+  height:50px;
 }
 
 
