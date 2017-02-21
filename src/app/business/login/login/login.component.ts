@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     //do somathing to auth login
     // navigate to admin layoutE
     if ("admin" === this.loginUser.name && "admin" === this.loginUser.password) {
-      this.router.navigate(["/admin"]);
+      this.router.navigate(["/admin/data"]);
     } else {
       alert("用户或者密码错误 ！");
     }

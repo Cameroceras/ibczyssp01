@@ -1,29 +1,5 @@
-thead {
-  background: #ececec;
-}
-
-.table {
-  width:100%;
-  text-align: center;
-  border-collapse: collapse;
-  border:1px solid #ccc;
-}
 
 
-.table td{
-  padding:8px;
-  border:1px solid #ccc;
-
-}
-
-.table tbody tr:nth-child(2n+1){
-  background: #fff;
-}
-
-
-.table tbody tr:hover{
-  background: #ececec;
-}
 
 
 

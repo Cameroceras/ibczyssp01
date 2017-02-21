@@ -15,6 +15,12 @@ import {AdvertmgComponent} from "./business/advertmg/advertmg/advertmg.component
 import {DashboardComponent} from "./business/data/dashboard/dashboard/dashboard.component";
 import {SearchComponent} from "./business/data/search/search/search.component";
 import {MtableComponent} from "./business/data/mtable/mtable/mtable.component";
+import {MediasearchComponent} from "./business/mediamg/mediasearch/mediasearch/mediasearch.component";
+import {MediatableComponent} from "./business/mediamg/mediatable/mediatable/mediatable.component";
+import {MediaaddComponent} from "./business/mediamg/mediaadd/mediaadd/mediaadd.component";
+import {AdvertsearchComponent} from "./business/advertmg/advertsearch/advertsearch/advertsearch.component";
+import {AdverttableComponent} from "./business/advertmg/advertable/adverttable/adverttable.component";
+import {AdvertaddComponent} from "./business/advertmg/advertadd/advertadd/advertadd.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -22,12 +28,13 @@ const routes: Routes = [
   {
     path: 'admin',
     component: HomeComponent,
-    children:[
-      {path:'data',component:DataComponent},
-      {path:'sdk',component:SdkComponent},
-      {path:'user',component:UserComponent},
-      {path:'media',component:MediamgComponent},
-      {path:'advert',component:AdvertmgComponent}
+    children: [
+      {path: 'data', component: DataComponent},
+      {path: 'sdk', component: SdkComponent},
+      {path: 'user', component: UserComponent},
+      {path: 'media', component: MediamgComponent},
+      {path: 'advert', component: AdvertmgComponent},
+      {path: 'addMedia', component: MediaaddComponent},
     ],
   },
 ]
@@ -36,7 +43,6 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
-    CommonModule,
     MaterialModule,
     RouterModule.forRoot(routes),
   ],
@@ -51,10 +57,18 @@ const routes: Routes = [
     SdkComponent,
     UserComponent,
     MediamgComponent,
-    AdvertmgComponent,
     DashboardComponent,
     SearchComponent,
+
     MtableComponent,
+    MediasearchComponent,
+    MediatableComponent,
+    MediaaddComponent,
+
+    AdvertmgComponent,
+    AdverttableComponent,
+    AdvertsearchComponent,
+    AdvertaddComponent,
   ]
 })
 export class RoutersModule {

@@ -1,0 +1,67 @@
+<div>
+  <div class="madd-box">
+    <div>系统平台：
+      <md-select placeholder="系统平台" required>
+        <md-option value="android" selected>android</md-option>
+        <md-option value="android">ios</md-option>
+      </md-select>
+    </div>
+
+    <div>媒体名称：
+      <md-input-container>
+        <input type="text" mdInput placeholder="媒体名称" required/>
+
+      </md-input-container>
+      <span>
+        限20个汉字或40个字符，需与应用市场的媒体名称一致
+      </span>
+    </div>
+    <div>关键字：
+      <md-input-container>
+        <textarea mdInput></textarea>
+      </md-input-container>
+      <span>
+      限30个汉字或60个字符，请用逗号分隔多个关键词
+    </span>
+    </div>
+    <div>媒体类型：
+      <md-select placeholder="生活实用">
+        <md-option value="value">value</md-option>
+      </md-select>
+      <md-select placeholder="生活实用">
+        <md-option value="value">value</md-option>
+      </md-select>
+    </div>
+    <div>媒体介绍：
+      <md-input-container>
+        <textarea mdInput placeholder="媒体介绍"></textarea>
+      </md-input-container>
+      <span>正确填写媒体简介能够提升广告的匹配度及收益，至少40个字以上</span>
+    </div>
+    <div>程序包名：
+      <md-input-container>
+        <input mdInput required placeholder="程序包名"/>
+      </md-input-container>
+    </div>
+
+    <div>媒体状态：
+      <md-radio-group>
+        <md-radio-button value="1">已上架</md-radio-button>
+        <md-radio-button value="2">未上架</md-radio-button>
+      </md-radio-group>
+
+    </div>
+    <div>应用地址：
+      <md-input-container>
+        <input mdInput placeholder="应用地址" required/>
+      </md-input-container>
+    </div>
+
+    <div>
+      <button md-raised-button color="primary"> 返回</button>
+      <button md-raised-button color="accent"> 保存</button>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+.msdiv-box {
+  padding: 5px;
+}
+
+.msdiv-box md-input-container {
+  width: 20%;
+  margin-left: 40px;
+}
+
+.msdiv-bu01 {
+  margin-left: 20px;
+}
+
+.msdiv-bu02 {
+  float: right;
+  margin:10px 10px 0 0;
+}
