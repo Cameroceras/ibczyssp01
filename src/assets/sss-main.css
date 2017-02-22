@@ -8,10 +8,11 @@
 
 .table thead {
   background: #ececec;
-  font-weight:bold;
+  font-weight: bold;
 }
-.table thead td{
-  padding:10px;
+
+.table thead td {
+  padding: 10px;
 }
 
 .table td {
@@ -27,6 +28,8 @@
 .table tbody tr:hover {
   background: #ececec;
 }
+
+
 
 
 
