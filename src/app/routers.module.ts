@@ -34,9 +34,13 @@ const routes: Routes = [
       {path: 'data', component: DataComponent},
       {path: 'sdk', component: SdkComponent},
       {path: 'user', component: UserComponent},
-      {path: 'media', component: MediamgComponent},
+      {
+        path: 'media', component: MediamgComponent,
+        children: [
+          {path:"mediaadd",component:MediaaddComponent},
+        ]
+      },
       {path: 'advert', component: AdvertmgComponent},
-      {path: 'addMedia', component: MediaaddComponent},
     ],
   },
 ]
